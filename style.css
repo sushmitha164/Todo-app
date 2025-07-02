@@ -1,0 +1,220 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fffaf0;
+  color: #3e322b;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #b07d62;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+/* Main */
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form Styles */
+.add-todo-section {
+  background-color: #fff9f5;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+#todoForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, select, button {
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #a97464;
+}
+
+button {
+  background-color: #a97464;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #905f50;
+}
+
+/* Progress Section */
+.progress-section {
+  margin-bottom: 25px;
+  background-color: #fff9f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.progress-container {
+  width: 100%;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #a97464;
+  width: 0%;
+  transition: width 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+#progressText {
+  font-size: 14px;
+  color: #5c4b3b;
+}
+
+/* Todo List */
+.todo-list-section {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list-section h2 {
+  margin-bottom: 15px;
+}
+
+.todo-item {
+  background-color: #fcf4ee;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border-left: 5px solid #b07d62;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.todo-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Checkboxes */
+.task-checkbox {
+  margin-top: 5px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: #d9534f;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c9302c;
+}
+
+/* Empty Message */
+#emptyMessage {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  padding: 20px;
+}
+
+/* Category Tags */
+.category-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.personal {
+  background-color: #ffcce5;
+  color: #7a2a4d;
+}
+
+.study {
+  background-color: #ccffcc;
+  color: #2e6b2e;
+}
+
+.chores {
+  background-color: #fff5cc;
+  color: #8a6d1b;
+}
+
+.work {
+  background-color: #cce0ff;
+  color: #2d4d80;
+}
+
+.selfcare {
+  background-color: #ffe6f0;
+  color: #8c4a5f;
+}
+
+.others {
+  background-color: #e6e6e6;
+  color: #444;
+}
+
+/* Due and Points */
+.due-text,
+.points-text {
+  font-size: 13px;
+  display: block;
+  margin-top: 4px;
+  color: #5c4b3b;
+}

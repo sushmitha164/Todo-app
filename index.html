@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Todo App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My Todo App</h1>
+    <p>Keep track of your daily tasks</p>
+  </header>
+
+  <main>
+    <section class="add-todo-section">
+      <form id="todoForm">
+        <input type="text" id="todoInput" placeholder="Enter a new task..." required />
+
+        <select id="todoCategory" required>
+          <option value="" disabled selected>Select category</option>
+          <option value="Personal">Personal</option>
+          <option value="Work">Work</option>
+          <option value="Study">Study</option>
+          <option value="Chores">Chores</option>
+          <option value="SelfCare">Self Care</option>
+          <option value="Others">Others</option>
+        </select>
+
+        <input type="time" id="todoTime" required />
+        <input type="number" id="todoPoints" placeholder="Points (e.g., 10)" required min="1"/>
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+
+    <!-- Progress Bar -->
+    <section class="progress-section">
+      <h3>Progress</h3>
+      <div class="progress-container">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+      <p id="progressText">0 / 0 points completed</p>
+    </section>
+
+    <!-- Todo List -->
+    <section class="todo-list-section">
+      <h2>Your Tasks</h2>
+      <ul id="todoList"></ul>
+      <div id="emptyMessage">
+        <p>No tasks yet! Add your first task above.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
